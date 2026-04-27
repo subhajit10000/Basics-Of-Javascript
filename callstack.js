@@ -10,17 +10,13 @@ function one(){
 }
 
 
-
 function two(){
 
     console.log("two")
-
     three()
-
     console.log("two")
 
 }
-
 
 
 function three(){
@@ -28,9 +24,6 @@ function three(){
     console.log("three")
 
 }
-
-
-
 
 
 one()
