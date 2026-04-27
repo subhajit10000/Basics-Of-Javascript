@@ -16,8 +16,6 @@ user.welcomeMessage();
 console.log(this);
 
 
-
-
 function someFunc (){
     console.log(this);
     let username = "johndoe";
@@ -27,15 +25,11 @@ someFunc();
 
 
 
-
 const someFunction = () => {
     let username = "jane doe";
     console.log(username);
 }
 someFunction();
-
-
-
 
 
 
@@ -49,13 +43,10 @@ console.log(addTwo(1,2));
 
 
 
-
 const addmore = (num1, num2) => (num1 + num2)
 
 
 console.log(addmore(1,1));
-
-
 
 
 const obj = () => ({name: "John Doe"});
