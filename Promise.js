@@ -41,3 +41,20 @@ const checkNumber = new Promise((resolve, reject) => {
 checkNumber
     .then(result => console.log(result))
     .catch(error => console.log(error));
+
+
+// Promise with Function
+
+function divide(a, b) {
+    return new Promise((resolve, reject) => {
+        if (b === 0) {
+            reject("Cannot divide by zero");
+        } else {
+            resolve(a / b);
+        }
+    });
+}
+
+divide(20, 5)
+    .then(result => console.log("Result:", result))
+    .catch(error => console.log(error));
