@@ -13,3 +13,14 @@ const myPromise = new Promise((resolve, reject) => {
 myPromise
     .then(result => console.log(result))
     .catch(error => console.log(error));
+
+
+// Promise with setTimeout
+
+const delay = new Promise((resolve) => {
+    setTimeout(() => {
+        resolve("Data loaded after 3 seconds");
+    }, 3000);
+});
+
+delay.then(data => console.log(data));
